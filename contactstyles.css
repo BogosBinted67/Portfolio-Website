@@ -19,3 +19,23 @@
     justify-content: center;
     align-items: center;
 }
+.social-media h2
+{
+    display: flex;
+    row-gap: 1rem;
+    position: relative;
+    left: 75rem;
+    top: 5rem;
+}
+
+.link-tree
+{
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+    position: relative;
+    left: 80rem;
+    top: 10rem;
+    
+}

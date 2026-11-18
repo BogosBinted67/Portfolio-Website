@@ -18,5 +18,68 @@
             <li> <a href="contact.html">Contact</a> </li>
         </ul>
     </nav>
+    <body>
+        <section class="highlight-contain">
+        <div class="slider-wrapper">
+            <div class="slider">
+                <img id="highlight-slide-1" src="images\portfolio\Amanda_CharacterSheet.png"
+                    alt="An illustration of the front-side of a woman" />
+                <img id="highlight-slide-2" src="images\portfolio\AustinKenchanh_Portfolio-1.jpg"
+                    alt="A photo of a Woman doing a heart pose" />
+                <img id="highlight-slide-3" src="images/portfolio/ablummockV2.jpg"
+                    alt="A graphic ablum cover" />
+                <img id="highlight-slide-4" src="images\portfolio\Jayn vs kismet revision 2.png"
+                    alt="An illustration of two warriors fighting for the fate of the universe" />
+                <img id="highlight-slide-5" src="images\portfolio\FP_Revision.png"
+                    alt="An illustration of a plumber in a unknown world" />
+                <img id="highlight-slide-6" src="images\portfolio\Dark_Sun.jpg" alt="Vector art of a Dark Sun" />
+                <img id="highlight-slide-7" src="images\portfolio\AustinKenchanh_Portfolio-2.jpg"
+                    alt="A product photo of popcorn " />/>
 
+            </div>
+            <div class="slider-nav">
+                <a href="#highlight-slide-1"></a>
+                <a href="#highlight-slide-2"></a>
+                <a href="#highlight-slide-3"></a>
+                <a href="#highlight-slide-4"></a>
+                <a href="#highlight-slide-5"></a>
+                <a href="#highlight-slide-6"></a>
+                <a href="#highlight-slide-7"></a>
+                <a href="#highlight-slide-8"></a>
+                <a href="#highlight-slide-9"></a>
+                <a href="#highlight-slide-10"></a>
+            </div>
+        </div>
+    </section>
+
+    </body>
+
+
+
+    <dialog id="warning-dialog">
+        <form>
+            <h2>
+             Content Warning:    
+            </h2>
+            <pre>
+                
+                Content in this website may contain art 
+                depicting graphical violence 
+                or implications self-harm or suicide. 
+                <button type = "button" onclick="CloseLoginButton()">Proceed</button>
+            </pre>
+        </form>
+    </dialog>
+    
+    <script>
+        const dialog = document.getElementById("warning-dialog")
+        const dismiss = sessionStorage.getItem("dismiss")
+        if (!dismiss)
+        dialog.showModal()
+        function CloseLoginButton()
+        {
+            dialog.close()
+            sessionStorage.setItem("dismiss", true)
+        }
+    </script>
 </html>
